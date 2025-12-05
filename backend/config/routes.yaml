@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../vendor/symfony/routing/Loader/schema/routing.schema.json
+
+controllers:
+    resource: routing.controllers
+
+api_login:
+    path: /api/login
+    methods: ['POST']
+
+admin_login:
+    path: /login
+    controller: App\Controller\SecurityController::login
+
+app_logout:
+    path: /logout
+    methods: GET
